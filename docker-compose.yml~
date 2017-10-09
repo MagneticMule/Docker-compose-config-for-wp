@@ -13,8 +13,7 @@ services:
                 # i am developing called bacol-utils-for-wp to the container. This allows me to edit the 
                 # plugin files on my local machine while viewig the results on the container.
                 - ../bacol-utils-for-wp:/var/www/html/wp-content/plugins/bacol-utils-for-wp
-                - ../literature-city:/var/www/html/wp-content/themes/literature-city
-                  # - ./wp-config.php:/var/www/html/wp-config.php
+                - ../bacol-theme:/var/www/html/wp-content/themes/literature-city
     mysql:
                 # grab the latest version of the mysql container
                 image: mysql:latest
